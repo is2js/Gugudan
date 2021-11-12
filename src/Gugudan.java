@@ -49,21 +49,39 @@ public class Gugudan {
 //		result = 4 * 9;
 //		System.out.println(result);
 		
-		// 5단
-		// 5단부터는 몇단인지 입력받아 사용. -> [사용자입력]을 통해, 반복사용되면서 [바뀌는 부분만 따로 입력받는다]
-		// 사용자입력은 jdk제공 Scanner 클래스를 이용함. -> class 바깥 가장 상단에 추가한다.
-		System.out.println("구구단 중 출력할 단은? : ");
-		Scanner scanner = new Scanner(System.in);
-		int number = scanner.nextInt();
-		System.out.println(number * 1);
-		System.out.println(number * 2);
-		System.out.println(number * 3);
-		System.out.println(number * 4);
-		System.out.println(number * 5);
-		System.out.println(number * 6);
-		System.out.println(number * 7);
-		System.out.println(number * 8);
-		System.out.println(number * 9);
+//		// 5단
+//		// 5단부터는 몇단인지 입력받아 사용. -> [사용자입력]을 통해, 반복사용되면서 [바뀌는 부분만 따로 입력받는다]
+//		// 사용자입력은 jdk제공 Scanner 클래스를 이용함. -> class 바깥 가장 상단에 추가한다.
+//		System.out.println("구구단 중 출력할 단은? : ");
+//		Scanner scanner = new Scanner(System.in);
+//		int number = scanner.nextInt();
+//		System.out.println(number * 1);
+//		System.out.println(number * 2);
+//		System.out.println(number * 3);
+//		System.out.println(number * 4);
+//		System.out.println(number * 5);
+//		System.out.println(number * 6);
+//		System.out.println(number * 7);
+//		System.out.println(number * 8);
+//		System.out.println(number * 9);
+		
+		// 6단부터 반복문을 사용
+		// -> 바뀌는 부분이 뒤에 똑같은 것 OR 연속되면서 반복되는 부분일 경우!
+		// 1) while문이 더쉬워서 먼저 6단 구현  2) 그담이 for로 7단 구현
+		// 1-1) while문의 시작점을 정한다. -> 1부터 9까지 반복되므로 시작점은 1이다. 
+		int i = 1;
+		// 1-2) 언제까지??? 1시작이면 ->   while < N+1 or <= N 까지가.. N번임. (0시작  while < N or 1시작  while  < N+1)
+		while(i < 10) {
+			System.out.println(6 * i); // 반복되는(연속되는) 부분을 반복문 & i 통해 해결한다.
+			i = i + 1; // my) while검사 값의 업데이트는 맨 마지막에 해주는게 좋음. // i++로 줄여서 쓸 수 있다.
+		}
+		
+		// 7단: while문의 추상화. while문보다 더 line수를 줄인 것
+		// - 대부분은 while보다는 for문을 써서 짧게 간다.
+		int LAST_NUM = 9;
+		for(int j = 1; j < LAST_NUM + 1; j++) {
+			System.out.println(7 * j);
+		}
 		
 		
 	}
