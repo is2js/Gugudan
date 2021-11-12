@@ -86,24 +86,28 @@ public class Gugudan {
 //		
 		
 		
-		// 사용자입력에 따라 8, 9단 구현
-		System.out.println("구구단 중 출력할 단은? : ");
-		Scanner scanner = new Scanner(System.in);
-		int number = scanner.nextInt();
-		// + 사용자 입력값을 한번찍어보자.
-		System.out.println("사용자가 입력한 값 : " + number); // 문자열 + 숫자가 가능하다.
+//		// 사용자입력에 따라 8, 9단 구현
+//		System.out.println("구구단 중 출력할 단은? : ");
+//		Scanner scanner = new Scanner(System.in);
+//		int number = scanner.nextInt();
+//		// + 사용자 입력값을 한번찍어보자.
+//		System.out.println("사용자가 입력한 값 : " + number); // 문자열 + 숫자가 가능하다.
+//		
+//		// 사용자 입력값을 담은 변수를 통해 -> 조건을 건다. if   else if   else 
+//		if (number < 2) {
+//			System.out.println("값을 잘못 입력했습니다.");
+//		} else if (number > 9) {
+//			System.out.println("값을 잘못 입력했습니다.");			
+//		} else {
+//			// for문으로 구구단을 연속된 부분을 처리하여 출력 
+//			for(int i = 1; i < 10; i++) {
+//				System.out.println(number * i);			
+//			}
+//		}
 		
-		// 사용자 입력값을 담은 변수를 통해 -> 조건을 건다. if   else if   else 
-		if (number < 2) {
-			System.out.println("값을 잘못 입력했습니다.");
-		} else if (number > 9) {
-			System.out.println("값을 잘못 입력했습니다.");			
-		} else {
-			// for문으로 구구단을 연속된 부분을 처리하여 출력 
-			for(int i = 1; i < 10; i++) {
-				System.out.println(number * i);			
-			}
-		}
+		
+		
+		
 		
 	}
 }
